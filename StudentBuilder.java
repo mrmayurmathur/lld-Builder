@@ -30,4 +30,7 @@ public abstract class StudentBuilder{
   }
   public abstract StudentBuilder setcourses (List<String> courses){
   }  
+  public Student build(){
+    return new Student(this);
+  }
 }
